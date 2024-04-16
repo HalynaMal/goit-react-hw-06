@@ -41,24 +41,16 @@ const ContactForm = () => {
       <Form className={css.formBox}>
         <div className={css.inputForm}>
           <label className={css.labelText} htmlFor={nameFieldId}>
-            Name
+            Username
           </label>
-          <Field
-            className={css.field}
-            type="text"
-            name="name"
-            id={nameFieldId}
-          />
+          <Field type="text" name="name" id={nameFieldId} />
           <ErrorMessage name="name" as="span" />
         </div>
         <div className={css.inputForm}>
-          <label htmlFor={numberFieldId}>Number</label>
-          <Field
-            className={css.field}
-            type="text"
-            name="number"
-            id={numberFieldId}
-          />
+          <label className={css.labelText} htmlFor={numberFieldId}>
+            Number
+          </label>
+          <Field type="text" name="number" id={numberFieldId} />
           <ErrorMessage name="number" as="span" />
         </div>
 
